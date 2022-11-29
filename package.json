@@ -1,0 +1,19 @@
+{
+  "name": "flum-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.ts",
+  "scripts": {
+  },
+  "keywords": [],
+  "author": "FLUM",
+  "license": "MIT",
+  "dependencies": {
+    "node-media-server": "^2.4.9",
+    "typescript": "^4.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@types/node-media-server": "^2.3.3"
+  }
+}
