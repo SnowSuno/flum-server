@@ -2,7 +2,7 @@
   "name": "flum-server",
   "version": "1.0.0",
   "description": "",
-  "main": "app.ts",
+  "main": "src/app.js",
   "scripts": {
   },
   "keywords": [],

@@ -7,6 +7,8 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm i
 
-COPY . .
+COPY ./src ./src
 
-ENTRYPOINT ["node", "index.js"]
+ENV FFMPEG_PATH="/usr/bin/ffmpeg"
+
+ENTRYPOINT ["node", "src/app.js"]

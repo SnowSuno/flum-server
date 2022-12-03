@@ -1,6 +1,5 @@
-import NodeMediaServer from "node-media-server";
-import { BINARY_PATH, MEDIA_PATH } from "./path";
-import * as path from "path";
+const NodeMediaServer = require("node-media-server");
+const { BINARY_PATH, MEDIA_PATH } = require("./path");
 
 const nms = new NodeMediaServer({
   rtmp: {
@@ -16,7 +15,7 @@ const nms = new NodeMediaServer({
     mediaroot: MEDIA_PATH,
   },
   trans: {
-    ffmpeg: path.join(BINARY_PATH, "ffmpeg"),
+    ffmpeg: BINARY_PATH,
     tasks: [
       {
         app: "live",
